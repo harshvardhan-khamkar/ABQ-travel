@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>ABQ Travel</title>
+    <link rel="stylesheet" href="./travel_recommendation.css">
+</head>
+<body>
+    <nav>
+        <h1 style="color:white">ABQ Travel</h1>
+        <ul>
+            <li><a href="./index.html" id="home">Home </a></li>
+            <li><a href="./about_us.html" id="home">About Us </a></li>
+            <li><a href="./contact_us.html" id="contact">Contact Us </a></li>
+        </ul>
+    </nav>
+    <main id=main>
+            <aside id=socials>
+                <br>
+                <ul>
+                    <li ><br><a href="#"><img class="socialimg" src="https://static.vecteezy.com/system/resources/previews/016/716/467/non_2x/twitter-icon-free-png.png"></a> </li>
+                    <li ><br><a href="#"><img class="socialimg" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Facebook_Logo_2023.png/768px-Facebook_Logo_2023.png"></a> </li>
+                    <li ><br><a href="#"><img class="socialimg" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/768px-Instagram_icon.png"></a> </li>
+                    <li ><br><a href="#"><img class="socialimg" src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png"></a> </li>
+                </ul>
+            </aside>
+            <section class=home>
+                <br>
+                <br>
+                <br>
+                <h1 style="font-weight: bold; font-size: 60px; width: 70%">CONTACT US</h1>
+                <br>
+                <div class="container" style="width: 50%;margin-left: 10%">
+                    <form id="contactForm" style="margin-left: 15px">
+                        <div>
+                            <label for="name">Name</label><br>
+                            <input type="text" id="name" name="name"  class="contactusInput" required>
+                        </div>
+                        <div>
+                            <label for="email">Email</label><br>
+                            <input type="email" id="email" name="email"  class="contactusInput" required>
+                        </div>
+                        <div>
+                            <label for="message">Message</label><br>
+                            <textarea id="message" name="message" rows="5" class="contactusInput" required></textarea>
+                        </div>
+                        <button type="submit" onclick="thankyou()" style="padding: 10px 60px;">Submit</button>
+                    </form>
+  
+                </div>
+                <br>
+                <br>
+                <br>
+            </section>
+            
+        
+    </main>
+    <script>
+        function thankyou(){
+            alert('Thank you for contacting us!')
+        }
+    </script>
+</body>
+</html>
